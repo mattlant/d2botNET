@@ -11,6 +11,8 @@ I had been looking for the source code for a long time, and I finally came acros
 and since the source was never published years ago as it was meant to be, I have done
 so now.
 
+## Notes 
+
 Wow, the amount of work the team and all the plugin developers put into this was truly amazing. It was a fun time, I learned a lot, and made a lot of awesome friends.
 
 I am trying to find the official developer list and will post it here when I find it.
