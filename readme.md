@@ -40,11 +40,22 @@ I had been looking for the source code for a long time, and I finally came acros
 and since the source was never published years ago as it was meant to be, I have done
 so now.
 
-## Notes 
+## Original Team
+
+- mattlant - Core Developer
+- IProto - Web Master, Programmer, Idea Guy
+- kasb - Programmer, IRC/Forum hosting
+- Oz - Core Developer, Library Dev
+- usz - Core Developer, Bot Developer
+- yeknomssa - Crazy Programmer, IRC Op, Common Lib Developer, AWOL
+- lifewolf - Core Developer
+- CrazyCasta - Core Developer, MultiKilla coder
+- lord2800 - Programmer, Mirror Hosting
+- NS - Crazy Frenchman Programmer
+
+## A Brief Note
 
 Wow, the amount of work the team and all the plugin developers put into this was truly amazing. It was a fun time, I learned a lot, and made a lot of awesome friends.
-
-I am trying to find the official developer list and will post it here when I find it.
 
 # Miscellaneous
 
