@@ -1,0 +1,66 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "botNET.Loader.dll", "botNET.Loader\Loader.vcproj", "{028ED84D-7D99-4026-B399-F3B47449A9DF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "botNET.Loader.gui", "botNET.Loader.gui\botNET.Loader.gui.csproj", "{39161B4F-8BA8-40C2-BEFB-27299995A7BF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "botNET.Installer", "botNET.Installer\botNET.Installer.vdproj", "{C237BAD5-0308-4F89-93E2-1CC59B32FC1C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "botNET", "botNET\botNET.vcproj", "{256C8A6D-98E6-4765-84AF-881274F695FA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {0E7E6171-B65D-46DA-BAD8-441A87BD6FE7}
+		SccProjectUniqueName1 = botNET.Installer\\botNET.Installer.vdproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = botNET.Installer\\
+		SccProjectUniqueName2 = botNET.Loader.gui\\botNET.Loader.gui.csproj
+		SccLocalPath2 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection2 = botNET.Loader.gui\\
+		SccProjectUniqueName3 = botNET.Loader\\Loader.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection3 = botNET.Loader\\
+		SccProjectUniqueName4 = botNET\\botNET.vcproj
+		SccLocalPath4 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection4 = botNET\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{028ED84D-7D99-4026-B399-F3B47449A9DF}.Debug.ActiveCfg = Debug|Win32
+		{028ED84D-7D99-4026-B399-F3B47449A9DF}.Debug.Build.0 = Debug|Win32
+		{028ED84D-7D99-4026-B399-F3B47449A9DF}.Release.ActiveCfg = Debug|Win32
+		{028ED84D-7D99-4026-B399-F3B47449A9DF}.Release.Build.0 = Debug|Win32
+		{39161B4F-8BA8-40C2-BEFB-27299995A7BF}.Debug.ActiveCfg = Debug|.NET
+		{39161B4F-8BA8-40C2-BEFB-27299995A7BF}.Debug.Build.0 = Debug|.NET
+		{39161B4F-8BA8-40C2-BEFB-27299995A7BF}.Release.ActiveCfg = Debug|.NET
+		{39161B4F-8BA8-40C2-BEFB-27299995A7BF}.Release.Build.0 = Debug|.NET
+		{C237BAD5-0308-4F89-93E2-1CC59B32FC1C}.Debug.ActiveCfg = Debug
+		{C237BAD5-0308-4F89-93E2-1CC59B32FC1C}.Release.ActiveCfg = Release
+		{C237BAD5-0308-4F89-93E2-1CC59B32FC1C}.Release.Build.0 = Release
+		{256C8A6D-98E6-4765-84AF-881274F695FA}.Debug.ActiveCfg = Debug|Win32
+		{256C8A6D-98E6-4765-84AF-881274F695FA}.Debug.Build.0 = Debug|Win32
+		{256C8A6D-98E6-4765-84AF-881274F695FA}.Release.ActiveCfg = Release|Win32
+		{256C8A6D-98E6-4765-84AF-881274F695FA}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

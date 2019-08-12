@@ -1,0 +1,44 @@
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<META NAME="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+	</HEAD>
+	<BODY>
+		<P>botNET Copyright 2004-2005</P>
+		<P>&nbsp;</P>
+		<P>As of version 0.5.0 botNET will now keep a detailed change log as part of the 
+			installation</P>
+		<P><STRONG><U>0.5.0</U></STRONG></P>
+		<UL>
+			<LI>
+				Rewrote the entire unit classes. There is no longer a Unit class.</LI>
+			<UL>
+				<LI>
+					Added UnitBase. This is the base of all the new classes. You cannot instantiate 
+					this class directly, but a sub class can be cast to this class for generic 
+					functions that can take any unit type.</LI>
+				<LI>
+					Added PlayerNPCBase. Just as with the UnitBase class, this class cannot be 
+					instantiated directly. This class comprises of the common properties and 
+					methods of both NPCs and Players. Also can be cast to.</LI>
+				<LI>
+					Added these classes: Player, NPC, GameObject, Missile, Item, and Warp. These 
+					are the common classes you will work with that represent the various unit types 
+					in the game.</LI>
+				<LI>
+					There is no longer any concept of a null unit. For example, in previous 
+					versions meny ppl would get null reference exceptions because they did not test 
+					to make sure theire instance was not null. Now in this newest version of 
+					botNET, you will NEVER receive a null reference from any method in the core. So 
+					instead of a line like this: if(someunit != null &amp;&amp; someunit.Valid) you 
+					now only need this: if(someunit.IsValid()). this new IsValid method is much 
+					smarter than past, and does several validity checks, including a null internal 
+					pointer, so you no longer have to worry about nulls.</LI>
+				<LI>
+				</LI>
+			</UL>
+			<LI>
+				Removed Me class. To get an instance of your player character you now get an 
+				instance of the PC class</LI></UL>
+	</BODY>
+</HTML>

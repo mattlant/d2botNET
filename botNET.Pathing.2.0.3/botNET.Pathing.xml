@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>botNET.Pathing</name>
+    </assembly>
+    <members>
+        <member name="T:botNET.Pathing.Distance">
+            <summary>
+            Summary description for Distance.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Distance.Manhattan(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the Distance using the Manhattan Method
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.Manhattan(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Distance using the Manhattan Method
+            </summary>
+            <param name="c1"></param>
+            <param name="c2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.Euclidian(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the Distance using the Euclidian Method
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.Euclidian(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Distance using the Euclidian Method
+            </summary>
+            <param name="c1"></param>
+            <param name="c2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.EuclidianNoSqrt(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the Distance using the Euclidian Method with no Square Root
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.EuclidianNoSqrt(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Distance using the Euclidian Method with no Square Root
+            </summary>
+            <param name="c1"></param>
+            <param name="c2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.DiagShortcut(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the Distance using the Diagonal Shortcut Method. This offers best Measurement for Diablo Type games
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.DiagShortcut(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Distance using the Diagonal Shortcut Method. This offers best Measurement for Diablo Type games
+            </summary>
+            <param name="c1"></param>
+            <param name="c2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.MaxDxDy(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the Distance using the Maximum DxDy Method.
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.MaxDxDy(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Distance using the Maximum DxDy Method.
+            </summary>
+            <param name="c1"></param>
+            <param name="c2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Distance.GetAngle(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns an angle
+            </summary>
+            <param name="x1"></param>
+            <param name="y1"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:botNET.Pathing.Heap">
+            <summary>
+            Summary description for Heap.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Heap.#ctor(System.Int32,botNET.Pathing.HeapDirection)">
+            <summary>
+            Creates the Heap
+            </summary>
+            <param name="maxsize">Maximum size of teh heap</param>
+            <param name="Direction">Sets wether Low is a priority or High is a priority</param>
+        </member>
+        <member name="M:botNET.Pathing.Heap.Add(botNET.Pathing.HeapNode)">
+            <summary>
+            Adds a Node to teh Heap
+            </summary>
+            <param name="d">A node used on the heap</param>
+        </member>
+        <member name="M:botNET.Pathing.Heap.Remove">
+            <summary>
+            Removes a Node from the Heap with the highest prioroty
+            </summary>
+            <returns>Returns a HeapNode object</returns>
+        </member>
+        <member name="T:botNET.Pathing.HeapDirection">
+            <summary>
+            Defines heap priority
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.HeapDirection.LowPriority">
+            <summary>
+            Used to instruct the heap to consider low priority as more important
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.HeapDirection.HighPriority">
+            <summary>
+            Used to instruct the heap to consider high priority as more important
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.HeapNode">
+            <summary>
+            A Class used to put an object onto the heap
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.HeapNode.Item">
+            <summary>
+            The object to put on the heap
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.HeapNode.Priority">
+            <summary>
+            The priority of the item
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.HeapNode.#ctor(System.Object,System.Double)">
+            <summary>
+            Creates a HeapNode object for the Heap
+            </summary>
+            <param name="Item">The object to put on the heap</param>
+            <param name="Priority">The priority of the item</param>
+        </member>
+        <member name="T:botNET.Mapping.LevelMap">
+            <summary>
+            Summary description for Area.
+            </summary>
+        </member>
+        <member name="T:botNET.Mapping.Map">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.Map.#ctor">
+            <summary>
+            The Map constructor should be called after initializing an inherited classes members
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.x">
+            <summary>
+            Pretected x coord
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.y">
+            <summary>
+            Protected y coord
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.sizex">
+            <summary>
+            Protected X size
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.sizey">
+            <summary>
+            Protected Y size
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.maxx">
+            <summary>
+            Protected Max X
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.maxy">
+            <summary>
+            Protected Max Y
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.collisiondata">
+            <summary>
+            Protected memeber to hold colission data
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.isinitialized">
+            <summary>
+            Protected member to hold if the Map is initialized
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.Name">
+            <summary>
+            A name you can give this instance of Map
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.Map.InitializationTime">
+            <summary>
+            Protected member that hold the time it took to initialize initialize the map
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.Map.Initialize">
+            <summary>
+            Initializes the Map
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.Map.SetExits">
+            <summary>
+            Sets the maps exits
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.Map.IsInRange(System.Drawing.Point)">
+            <summary>
+            Used to Check if a coord is within the COllisionData's Limits
+            </summary>
+            <param name="coord">The System.Drawing.Point to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.IsInRange(System.Int32,System.Int32)">
+            <summary>
+            Used to Check if a coord is within the COllisionData's Limits
+            </summary>
+            <param name="XCoord">The X System.Drawing.Point to check</param>
+            <param name="YCoord">The X System.Drawing.Point to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.IsWalkable(System.Drawing.Point)">
+            <summary>
+            Checks if the given System.Drawing.Point is walkable
+            </summary>
+            <param name="coord">The coordinate to test</param>
+            <returns>true if walkable else false</returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.IsWalkable(System.Int32,System.Int32)">
+            <summary>
+            Checks if the given System.Drawing.Point is walkable
+            </summary>
+            <param name="_x">The X coordinate to test</param>
+            <param name="_y">The Y coordinate to test</param>
+            <returns>true if walkable else false</returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.FindClosestWalkable(System.Drawing.Point)">
+            <summary>
+            Finds the closest walkable coordinate to the given coordinate
+            </summary>
+            <param name="coord">Initial System.Drawing.Point</param>
+            <returns>A coordinate that is closest to the input coordinate</returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.FindClosestWalkable(System.Int32,System.Int32)">
+            <summary>
+            Finds the closest walkable coordinate to the given coordinate
+            </summary>
+            <param name="_x">Initial X System.Drawing.Point</param>
+            <param name="_y">Initial Y System.Drawing.Point</param>
+            <returns>A coordinate that is closest to the input coordinate</returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.LOS(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Check to see if you have Line Of Sight between the Start and End Coordinates
+            </summary>
+            <param name="StartX">Starting X System.Drawing.Point</param>
+            <param name="StartY">Starting Y System.Drawing.Point</param>
+            <param name="EndX">Ending X System.Drawing.Point</param>
+            <param name="EndY">Ending Y System.Drawing.Point</param>
+            <returns>Returns true if you have LOS, false otherwise</returns>
+        </member>
+        <member name="M:botNET.Mapping.Map.Dump(System.Int32,System.String)">
+            <summary>
+            Dumps the Map to the given file
+            </summary>
+            <param name="Bit">The bit to dump, from 0-15</param>
+            <param name="file">The full filename of the file to dump to</param>
+        </member>
+        <member name="P:botNET.Mapping.Map.IsInitialized">
+            <summary>
+            Gets a value indictating if the Map is initialized or not
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.CollisionData">
+            <summary>
+            Gets the Map's Collision Data
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.X">
+            <summary>
+            Gets the Map's X System.Drawing.Point
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.Y">
+            <summary>
+            Gets the Map's X System.Drawing.Point
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.SizeX">
+            <summary>
+            Gets the Map's Size on the X Axis
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.SizeY">
+            <summary>
+            Gets the Map's Size on the Y Axis
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.MaxX">
+            <summary>
+            Gets the Map's Max X System.Drawing.Point
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.Map.MaxY">
+            <summary>
+            Gets the Map's Max X System.Drawing.Point
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.LevelMap.#ctor">
+            <summary>
+            LevelMap constructor used to Define the Map you character is standing in
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.LevelMap.#ctor(botNET.AreaLevel)">
+            <summary>
+            LevelMap constructor used to Define the Map of teh Level you specify
+            </summary>
+            <param name="LevelNumber">The level number this Map will be created for</param>
+        </member>
+        <member name="M:botNET.Mapping.LevelMap.Initialize">
+            <summary>
+            Initializes the LevelMap
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.LevelMap.Level">
+            <summary>
+            Gets the Level number this LevelMap defines
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.LevelMap.Rooms">
+            <summary>
+            Gets an ArrayList of Room Objects held in this LevelMap
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Mover">
+            <summary>
+            Summary description for Mover.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Mover.#ctor(botNET.Pathing.Pather)">
+            <summary>
+            Creates a new Mover to move your character.
+            </summary>
+            <param name="PatherToUse">The Pather object. </param>
+        </member>
+        <member name="M:botNET.Pathing.Mover.Move">
+            <summary>
+            Initiates the movement process
+            </summary>
+            <returns>True if successful, false otherwise. </returns>
+        </member>
+        <member name="M:botNET.Pathing.Mover.Move(System.Int32)">
+            <summary>
+            Initiates the movement process
+            </summary>
+            <param name="StartPoint">You can pass an integer to represent the point on the path to start at in case you already did some manual movement</param>
+            <returns>True if successful, false otherwise. </returns>
+        </member>
+        <member name="T:botNET.Pathing.MoverEventArgs">
+            <summary>
+            Summary description for MoverEventArgs.
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Node">
+            <summary>
+            A Node object is used by the pather to hold a coordinates info
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Node.X">
+            <summary>
+            Holds the X of the node
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Node.Y">
+            <summary>
+            Holds the Y of the node
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Node.IsOpen">
+            <summary>
+            A value indicating if the node is Open
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Node.IsClosed">
+            <summary>
+            A value indicating if the node is Closed
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Node.Parent">
+            <summary>
+            Holds a refernce to a Node which is this Node's Parent
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Node.#ctor(System.Int32,System.Int32,System.Boolean,System.Boolean,botNET.Pathing.Node,System.Double,System.Double)">
+            <summary>
+            Creates an instance of Node
+            </summary>
+            <param name="X">Sets the X of the node</param>
+            <param name="Y">Sets the X of the node</param>
+            <param name="IsOpen">Sets a value indicating if the node is Open</param>
+            <param name="IsClosed">Sets s value indicating if the node is Closed</param>
+            <param name="Parent">Sets this nodes Parent</param>
+            <param name="g">Sets the G of the node</param>
+            <param name="h">Sets the H of the node</param>
+        </member>
+        <member name="P:botNET.Pathing.Node.G">
+            <summary>
+            Gets or Sets the G value of the Node
+            </summary>
+        </member>
+        <member name="P:botNET.Pathing.Node.H">
+            <summary>
+            Gets or Sets the H value of the Node
+            </summary>
+        </member>
+        <member name="P:botNET.Pathing.Node.F">
+            <summary>
+            Gets the F value of the Node
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Path">
+            <summary>
+            The Path object holds an array of System.Drawing.Point objects.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Path.#ctor">
+            <summary>
+            General constructor
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Path.#ctor(System.Collections.ArrayList)">
+            <summary>
+            Constructir that supports passing an ArrayList of Coordinates
+            </summary>
+            <param name="coords">an ArrayList of Coordinates</param>
+        </member>
+        <member name="P:botNET.Pathing.Path.Count">
+            <summary>
+            Returns the number of Coordinates in this Path
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:botNET.Pathing.Path.Item(System.Int32)" -->
+        <member name="P:botNET.Pathing.Path.CoordinateList">
+            <summary>
+            The actual ArrayList of Coordinates
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Pather">
+            <summary>
+            Summary description for Pather.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Pather.#ctor(botNET.Mapping.Map)">
+            <summary>
+            Creates a Pather object used for Pathing
+            </summary>
+            <param name="mMap">An object that inherits from the Map object</param>
+        </member>
+        <member name="M:botNET.Pathing.Pather.#ctor(botNET.Mapping.Map,botNET.Pathing.PatherConfig)">
+            <summary>
+            Creates a Pather object used for Pathing
+            </summary>
+            <param name="mMap">An object that inherits from the Map object</param>
+            <param name="PatherConfiguration">Defines the Pather configuration</param>
+        </member>
+        <member name="F:botNET.Pathing.Pather.LastScore">
+            <summary>
+            Holds the Score of the last path generated
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPathToWarp(System.Int32)">
+            <summary>
+            Finds a Path to the given Warp
+            </summary>
+            <param name="WarpID">The ID of the warp to path to</param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPathToWarp(System.Int32[])">
+            <summary>
+            Finds a Path to the given Warps
+            </summary>
+            <param name="WarpID">The ID of the warp to path to</param>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPathToWaypoint">
+            <summary>
+            Finds a Path to the given Warp
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPath(botNET.Units.PresetUnit)">
+            <summary>
+            Finds a Path to the given PresetUnit
+            </summary>
+            <param name="Preset">The Preset Unit to path to</param>
+            <returns>A Path object containg the Path's Coordinates</returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPath(System.Int32,System.Int32)">
+            <summary>
+            Finds a Path to teh given Destination
+            </summary>
+            <param name="DestinationX">The destinations X System.Drawing.Point</param>
+            <param name="DestinationY">The destinations Y System.Drawing.Point</param>
+            <returns>A Path object containg the Path's Coordinates</returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPath(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Finds a Path to teh given Destination
+            </summary>
+            <param name="DestinationX">The destinations X System.Drawing.Point</param>
+            <param name="DestinationY">The destinations Y System.Drawing.Point</param>
+            <param name="StartX">The starting X System.Drawing.Point</param>
+            <param name="StartY">The starting Y System.Drawing.Point</param>
+            <returns>A Path object containg the Path's Coordinates</returns>
+        </member>
+        <member name="M:botNET.Pathing.Pather.FindPathToLevel">
+            <summary>
+            Will find a path to the given Level
+            </summary>
+            <returns>A Path</returns>
+        </member>
+        <member name="P:botNET.Pathing.Pather.PresetUnitUsed">
+            <summary>
+            Gets a PresetUnit if one was used
+            </summary>
+        </member>
+        <member name="P:botNET.Pathing.Pather.PatherConfiguration">
+            <summary>
+            Gets the PatherConfig used for this instance
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Reduction">
+            <summary>
+            Defines the Reduction Type
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Reduction.TeleportReduction">
+            <summary>
+            Used to define Teleportation Reduction
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Reduction.WalkingReduction">
+            <summary>
+            Used to define Walking Reduction
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.Heuristic">
+            <summary>
+            Defines the Various Forward Heuristics
+            Only one is currently used in pathing and cant be changed at this time.
+            Diagonal Shortcut is the one.
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Heuristic.MaxDXDY">
+            <summary>
+            Returns the distance of either the Y differnce or just the X differnce, whichever is greater.
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Heuristic.Euclidian">
+            <summary>
+            Standard Euclidian Distance
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Heuristic.DiagonalShortcut">
+            <summary>
+            The only one implemented in the Pathing Engine
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Heuristic.ManHattan">
+            <summary>
+            Standard Manhattan which is dIfference in X plus difference in Y
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.Heuristic.None">
+            <summary>
+            No Heuristic
+            </summary>
+        </member>
+        <member name="T:botNET.Pathing.PatherConfig">
+            <summary>
+            Summary description for PatherConfig.
+            </summary>
+        </member>
+        <member name="M:botNET.Pathing.PatherConfig.#ctor(botNET.Pathing.Heuristic,System.Double,System.Int32,botNET.Pathing.Reduction)">
+            <summary>
+            Creates a PatherConfig object required for the Pather
+            </summary>
+            <param name="HeuristicType"></param>
+            <param name="Factor"></param>
+            <param name="PathPointDistance"></param>
+            <param name="ReductionType"></param>
+        </member>
+        <member name="F:botNET.Pathing.PatherConfig.HeuristicType">
+            <summary>
+            Sets or Gets the Heuristic used. This is deprecated
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.PatherConfig.Factor">
+            <summary>
+            Gets or Sets the Factor. Factor is a multiplier for the Hueristic
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.PatherConfig.PathPointDistance">
+            <summary>
+            Gets or Sets the Distance between each path point
+            </summary>
+        </member>
+        <member name="F:botNET.Pathing.PatherConfig.ReductionType">
+            <summary>
+            Gets or Sets the Reduction Type
+            </summary>
+        </member>
+        <member name="T:botNET.Mapping.RoomMap">
+            <summary>
+            An object representing a Map of a room
+            Inherits from Map
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.RoomMap.#ctor(botNET.Mapping.Room)">
+            <summary>
+            RoomMap represents a Single Room in Diablo. It inherits from Map so it can be Pathed on
+            </summary>
+            <param name="rRoom">The Room object that this RoomMap will be made from</param>
+        </member>
+        <member name="F:botNET.Mapping.RoomMap.LevelOffSetX">
+            <summary>
+            Relative X Offset of the room to teh level
+            </summary>
+        </member>
+        <member name="F:botNET.Mapping.RoomMap.LevelOffSetY">
+            <summary>
+            Relative Y Offset of the room to teh level
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.RoomMap.Number">
+            <summary>
+            Gets the underlying botNET.Room's Room Number
+            </summary>
+        </member>
+        <member name="T:botNET.Mapping.StitchMap">
+            <summary>
+            Summary description for Area.
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.StitchMap.#ctor">
+            <summary>
+            LevelMap constructor used to Define the Map you character is standing in
+            </summary>
+        </member>
+        <member name="M:botNET.Mapping.StitchMap.#ctor(botNET.AreaLevel[])">
+            <summary>
+            LevelMap constructor used to Define the Map of teh Level you specify
+            </summary>
+            <param name="LevelNumber">The level number this Map will be created for</param>
+        </member>
+        <member name="M:botNET.Mapping.StitchMap.Initialize">
+            <summary>
+            Initializes the LevelMap
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.StitchMap.Levels">
+            <summary>
+            Gets the Level number this LevelMap defines
+            </summary>
+        </member>
+        <member name="P:botNET.Mapping.StitchMap.Rooms">
+            <summary>
+            Gets an ArrayList of Room Objects held in this LevelMap
+            </summary>
+        </member>
+    </members>
+</doc>

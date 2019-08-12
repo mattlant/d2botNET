@@ -1,0 +1,99 @@
+HOW TO COMPILE A BOT
+--------------------
+by Oz
+last updated: 5/18/2004
+
+
+INTRODUCTION
+------------
+
+This document is intended to help you compile and run a simple bot named
+HelloDiablo.  This assumes you have downloaded version 0.3.1 of botNET,
+that you have C# .net, and Diablo II LOD.
+
+
+BASICS
+------
+
+The base botNET directories should install itself under your Diablo II
+directory as shown:
+
+<Diablo II>
+    botNET
+        Assemblies
+            Libraries
+        Source
+            botnet.core.dll
+            Examples
+                HelloDiablo
+
+Regardless of where your Diablo II directory is located, when we refer to
+it, we'll use <Diablo II>. The HelloDiablo directory may likewise be
+referred to as the <HelloDiablo> directory.
+
+C# source code will be compiled against the .net and botNET libraries to
+create a dll.  This dll can be loaded as a module by botNET.
+
+
+WALKTHROUGH
+-----------
+
+1) Start your copy of Visual C#.
+
+2) Open the the HelloDiablo solution file:
+    "<Diablo II>\botNET\Source\Examples\HelloDiablo\HelloDiablo.sln" .
+
+3) Build the solution using the menu Build > Build Solution.
+
+4) The compiled module/assembly/dll should now exist as
+    "<HelloDiablo>\bin\Debug\HelloDiablo.dll" .
+
+    4a) If you wish to compile without debug features use the menu
+        Build > Configuration Manager to select Release instead of Debug.
+        If you do so, your compiled dll will now reside in Release
+        instead of Debug.
+
+5) Copy this dll to the <Diablo II>\botNET\Assemblies directory.  It is
+    from here that botNET expects to find loadable modules.
+
+6) Start Diablo II, preferably in a window (for development ease). To
+    load in a window, you may modify the shortcut for Diablo II to include
+    the -w flag.  For example:
+        "C:\Diablo II\Diablo II.exe" -w
+
+7) Run the botNET loader "<Diablo II>\botNET\botNETLoader.exe". From the
+    main screen.  This is the screen with the version number on it
+    (v 1.10) and the selection buttons for "SINGLE PLAYER", "BATTLENET",
+    "OTHER MULTIPLAYER", "EXIT DIABLO II", and a few other buttons.
+
+8) Enter a single player game with any character.  When the game starts,
+    you should see the text "botNET" followed by the current version
+    number.  If you don't see this, botNET is not loaded.  See the botNET
+    forums or IRC channel for assistance as the next steps will not work
+    without botNET loaded.
+
+9) Load your HelloDiablo module in game by opening a chat window and
+    entering ".load HelloDiablo".
+
+10) Start your module by entering ".start" in a chat window.  Once you do
+    this, the text "Hello Diablo!" should appear in the upper left corner
+    notification area along with the phrase ".Start -> Starting default
+    DLL".  If you saw the "Hello Diablo!" text, congratulations!  You've
+    successfully compiled and run a botNET module!
+
+
+TROUBLESHOOTING
+---------------
+
+If you are having trouble compiling, a compiled version of HelloDiablo
+should already be provided in the Assemblies directory.  You can test your
+ability to load botNET by jumping to step six in the walkthrough.
+
+If you are having trouble loading botNET, the D2Loader version of the
+Diablo II.exe may be required.
+
+Feel free to visit the botNET forums at http://forums.d2botnet.com/
+or use IRC irc://irc.d2botnet.com/botNET for more help.
+
+
+

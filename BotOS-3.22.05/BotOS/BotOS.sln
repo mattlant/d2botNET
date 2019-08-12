@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotOS", "BotOS.csproj", "{0624611B-EDC9-47A8-98D2-FF7147EF6A3E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotOSTest", "..\BotOSTest\BotOSTest.csproj", "{7C4520CA-510F-4B28-BBA7-3A7C7CAF7549}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0624611B-EDC9-47A8-98D2-FF7147EF6A3E}.Debug.ActiveCfg = Debug|.NET
+		{0624611B-EDC9-47A8-98D2-FF7147EF6A3E}.Debug.Build.0 = Debug|.NET
+		{0624611B-EDC9-47A8-98D2-FF7147EF6A3E}.Release.ActiveCfg = Release|.NET
+		{0624611B-EDC9-47A8-98D2-FF7147EF6A3E}.Release.Build.0 = Release|.NET
+		{7C4520CA-510F-4B28-BBA7-3A7C7CAF7549}.Debug.ActiveCfg = Debug|.NET
+		{7C4520CA-510F-4B28-BBA7-3A7C7CAF7549}.Debug.Build.0 = Debug|.NET
+		{7C4520CA-510F-4B28-BBA7-3A7C7CAF7549}.Release.ActiveCfg = Release|.NET
+		{7C4520CA-510F-4B28-BBA7-3A7C7CAF7549}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
