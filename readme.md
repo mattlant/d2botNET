@@ -1,7 +1,7 @@
 
 # d2botNET - Diablo 2 Botting Engine
 
-*This project was started almost 18 years ago and is posted for historical purposes only.*
+*This project was started ~2003 and is posted for historical purposes only.*
 
 ## Repo Contents
 - Core source files (0.5.0)
