@@ -10,7 +10,7 @@
 
 ## How it All Started
 
-I started coding for Diablo 2 botting back in d2jsp days. d2jsp being a JavaScript based botting engine. At the time there was no such thing as getting your character from point A to point B without a whole lot of guessing - and a whole lot more of dying - which made almost all bots useless.
+I started coding for Diablo 2 botting back in d2jsp days. d2jsp being a JavaScript based botting engine. At the time there was no such thing as getting your character from point A to point B without a whole lot of guessing - and a whole lot more dying - which made almost all bots useless.
 
 Through a lot of reverse engineering and trial and error I finally found all the memory structures that held world info, such as tiles, rooms & areas, where you can walk, where you can't, etc. This paved the way for true pathfinding for your character, and true botting, anywhere in the game world.
 
