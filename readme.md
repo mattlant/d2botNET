@@ -1,5 +1,5 @@
 
-# d2botNET - Diablo 2 Botting Engine
+# d2botNET (2003) - Diablo 2 Botting Engine
 
 *This project was started ~2003 and is posted for historical purposes only.*
 
